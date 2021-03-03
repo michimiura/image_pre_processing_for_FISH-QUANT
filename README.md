@@ -25,7 +25,7 @@ python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _GFP --pretrain
 
 For example from R Console,
 ```
-source(outline_from_cellpose.v3.R)
+source("outline_from_cellpose.v3.R")
 ```
 
-This R script takes masks produced with cellpose (nuclei and cytoplasm), traces the perimeter of these masks, and produces a text file containing XY coordinates of the outlines in the format that is compatible with FISH-QUANT.  
+This R script takes masks produced with cellpose (nuclei and cytoplasm), traces the perimeter of these masks, and produces a text file containing XY coordinates of the outlines (nuc and cyto) for each cell, in the format that is compatible with FISH-QUANT.  
