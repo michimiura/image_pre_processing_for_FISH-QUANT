@@ -23,7 +23,7 @@ For example,
 python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _DAPI --pretrained_model cyto --chan 0 --diameter 75 --save_tif --no_npy
 python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _GFP --pretrained_model cyto --chan 0 --diameter 150 --save_tif --no_npy
 ```
-I find that the nuclei are more accurately captured with the option `--pretrained_model cyto` for my cells.  Cellpose is seriously remarkable in identifying cytoplasmic boundaries of adherent cells contacting with each other.
+I find that the nuclei are more accurately captured with the option `--pretrained_model cyto` for my cell.  Cellpose is seriously remarkable in identifying cytoplasmic boundaries of adherent cells contacting with each other.
 
 ## 3. Run R script outline_from_cellpose.v3.R
 
