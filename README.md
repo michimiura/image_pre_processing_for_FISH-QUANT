@@ -1,5 +1,5 @@
 # image_pre_processing_for_FISH-QUANT
-## 1. Run ImageJ macro (Image_pre_processing_v2.0.ijm)
+## 1. Run ImageJ macro Image_pre_processing_v2.0.ijm
 
 This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaMorph (multidimentional acquisition), and will
 
@@ -21,4 +21,9 @@ python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _DAPI --pretrai
 python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _GFP --pretrained_model cyto --chan 0 --diameter 150 --save_tif --no_npy
 ```
 
-3.
+## 3. Run R script outline_from_cellpose.v3.R
+
+For example from R Console,
+```
+source(outline_from_cellpose.v3.R)
+```
