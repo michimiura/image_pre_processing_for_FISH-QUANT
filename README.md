@@ -1,5 +1,5 @@
 # image_pre_processing_for_FISH-QUANT
-1. Run ImageJ macro (Image_pre_processing_v2.0.ijm)
+## 1. Run ImageJ macro (Image_pre_processing_v2.0.ijm)
 
 This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaMorph (multidimentional acquisition), and will
 
@@ -13,7 +13,7 @@ This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaM
 
 (5) create DAPI and GFP maximum projection of selected z-stacks (focal plane +/- 2) and save for segmentation.
 
-2. Run Cellpose
+## 2. Run Cellpose
 
 For example,
 ```
