@@ -9,9 +9,9 @@ This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaM
 
 (3) create a maximum projection from (2) and save,
 
-(4) split the channels from (2) for FISH-QUANT and save each of channel,
+(4) split the channels from (2) for FISH-QUANT and save each of the channels,
 
-(5) create DAPI and GFP maximum projection of selected z-stacks (focal plane +/- 2) and save for segmentation.
+(5) create DAPI and GFP maximum projection of focal z-stacks (focal plane +/- 2) and save for segmentation.
 
 ## 2. Run Cellpose
 
@@ -29,4 +29,4 @@ For example from R Console,
 source("outline_from_cellpose.v3.R")
 ```
 
-This R script takes masks produced with cellpose (nuclei and cytoplasm), traces the perimeter of these masks, and produces a text file containing XY coordinates of the outlines (nuc and cyto) for each cell, in the format that is compatible with FISH-QUANT.  
+This R script takes masks produced with cellpose (nuclei and cytoplasm), traces the perimeter of these masks with Moore's neighbour tracing algorithm, and produces a text file containing XY coordinates of the outlines (nucleus and cytoplasm) for each cell, in the format that is compatible with FISH-QUANT.  
