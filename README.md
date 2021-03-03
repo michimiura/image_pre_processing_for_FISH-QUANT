@@ -1,4 +1,7 @@
 # image_pre_processing_for_FISH-QUANT
+
+The goal of this project is to prepare smFISH images and outlines (cell segmentation files) for spot quantification using FISH-QUANT.
+
 ## 1. Run ImageJ macro Image_pre_processing_v2.0.ijm
 
 This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaMorph (multidimentional acquisition), and will
