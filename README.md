@@ -1,4 +1,4 @@
-# image_pre_processing_for_FQ
+# image_pre_processing_for_FISH-QUANT
 This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaMorph (multidimentional acquisition), and will
 
 (1) stack up channels (e.g. DAPI, GFP, RFP and Cy5) from the same field of view,
