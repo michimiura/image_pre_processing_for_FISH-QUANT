@@ -1,6 +1,6 @@
 # image_pre_processing_for_FISH-QUANT
 
-The goal of this project is to prepare smFISH images and outlines (cell segmentation files) for spot quantification using FISH-QUANT.
+The goal of this work is to prepare smFISH images and outlines (cell segmentation files) for spot quantification using FISH-QUANT.
 
 ## 1. Run ImageJ macro Image_pre_processing_v2.0.ijm
 
@@ -16,14 +16,14 @@ This ImageJ macro takes raw z-stacked images acquired with Nikon Ti2-E and MetaM
 
 (5) create DAPI and GFP maximum projection of focal z-stacks (focal plane +/- 2) and save for segmentation.
 
-## 2. Run Cellpose
+## 2. Run cellpose
 
 For example,
 ```
 python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _DAPI --pretrained_model cyto --chan 0 --diameter 75 --save_tif --no_npy
 python -m cellpose --dir /mnt/g/yyyymmdd/Segmentation --img_filt _GFP --pretrained_model cyto --chan 0 --diameter 150 --save_tif --no_npy
 ```
-I find that the nuclei are more accurately captured with the option `--pretrained_model cyto` for my cells.
+I find that the nuclei are more accurately captured with the option `--pretrained_model cyto` for my cells.  Cellpose is seriously remarkable in identifying cytoplasmic boundaries of adherent cells contacting with each other.
 
 ## 3. Run R script outline_from_cellpose.v3.R
 
